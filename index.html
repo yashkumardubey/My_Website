@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Yash Kumar Dubey</title>
 <meta name="description" content="Website Yash Kumar Dubey — DevOps Engineer, AWS Cloud Practitioner, Linux Administrator, CI/CD Specialist." />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a84ff'/%3E%3Ctext x='50' y='62' font-family='Arial,Helvetica,sans-serif' font-size='54' text-anchor='middle' fill='white'%3EY%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="pic.jpeg">
 <style>
 :root{
   --bg: #0b1020;
@@ -17,7 +17,6 @@
   --ring: rgba(124,92,255,.45);
   --shadow: 0 10px 30px rgba(0,0,0,.35);
 }
-/* light mode vars will be toggled */
 .light{
   --bg:#f7f8fe;
   --card:#ffffff;
@@ -49,8 +48,23 @@ a:hover{text-decoration:underline}
 }
 .nav-inner{display:flex;align-items:center;gap:14px;justify-content:space-between;padding-block:10px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand .logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;box-shadow:var(--shadow)}
-.brand .logo span{font-weight:800;color:white}
+.brand .logo{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  overflow:hidden;
+  display:grid;
+  place-items:center;
+  box-shadow:var(--shadow);
+  background:none !important;
+  padding:0;
+}
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .nav a{font-weight:600}
 .nav .links{display:flex;gap:18px;flex-wrap:wrap}
 .btn{
@@ -104,7 +118,6 @@ details summary{cursor:pointer;font-weight:700}
   .hero{grid-template-columns:1fr}
   .nav .links{display:none}
 }
-/* print */
 @media print{
   .nav, .btn-bar, #themeSwitch{display:none !important}
   body{background:white;color:black}
@@ -116,7 +129,9 @@ details summary{cursor:pointer;font-weight:700}
 <nav class="nav">
   <div class="container nav-inner">
     <div class="brand">
-      <div class="logo"><img src="pic.jpeg" alt="Yash Kumar Dubey" style="width:100%;height:100%;border-radius:50%;object-fit:cover;"></div>
+      <div class="logo">
+        <img src="pic.jpeg" alt="Yash Kumar Dubey" class="profile-pic">
+      </div>
       <div>
         <div style="font-weight:800">Yash Kumar Dubey</div>
         <div class="small">DevOps Engineer • AWS Cloud • Linux • CI/CD</div>
@@ -139,7 +154,6 @@ details summary{cursor:pointer;font-weight:700}
     </button>
   </div>
 </nav>
-
 <header class="container hero">
   <section class="hero-card">
     <div class="flex" style="justify-content:space-between;align-items:flex-start">
