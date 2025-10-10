@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yash Kumar Dubey — DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Yash Kumar Dubey — DevOps Engineer, AWS Cloud Practitioner, Linux Administrator, CI/CD Specialist." />
+  <link rel="icon" href="pic.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f4f4;
+      --sidebar-bg: #2c3e50;
+      --card-bg: #ffffff;
+      --text-color: #34495e;
+      --accent-color: #2980b9;
+      --muted-color: #7f8c8d;
+      --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      --radius: 8px;
+      --transition: 0.3s ease;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--text-color);
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background: var(--sidebar-bg);
+      color: white;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      height: 100vh;
+    }
+    .sidebar h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      font-weight: 700;
+      text-align: center;
+    }
+    .sidebar .small {
+      font-size: 0.9rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .sidebar nav a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      border-radius: var(--radius);
+      margin: 5px 0;
+      transition: background var(--transition);
+    }
+    .sidebar nav a:hover {
+      background: var(--accent-color);
+    }
+    .main-content {
+      flex: 1;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: var(--accent-color);
+    }
+    .kv-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .kv-list .label {
+      font-weight: 700;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: var(--accent-color);
+      color: white;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: background var(--transition);
+    }
+    .btn:hover {
+      background: darken(var(--accent-color), 10%);
+    }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: var(--muted-color);
+    }
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+      .main-content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="pic.jpeg" alt="Yash Kumar Dubey" class="profile-pic" style="width: 100%; border-radius: 50%; margin-bottom: 20px;" />
+    <h1>Yash Kumar Dubey</h1>
+    <div class="small">DevOps Engineer<br>AWS Cloud • Linux • CI/CD</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#certs">Certifications</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div style="margin-top: 20px;">
+      <a href="Yash_Kumar_Dubey_Resume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </aside>
+  <main class="main-content">
+    <section id="about" class="section">
+      <div class="section-title">👋 About Me</div>
+      <p>
+        <strong>AWS Certified Cloud Practitioner</strong> and experienced <strong>DevOps Engineer</strong> with 2+ years of hands-on experience in Linux system administration, cloud infrastructure, automation, and secure CI/CD pipelines.
+      </p>
+      <div class="kv-list">
+        <div class="label">Location</div><div>Noida, Uttar Pradesh, India</div>
+        <div class="label">Email</div><div><a href="mailto:ydubey020@gmail.com">ydubey020@gmail.com</a></div>
+        <div class="label">Phone</div><div><a href="tel:+919935891845">+91 9935891845</a></div>
+        <div class="label">LinkedIn</div><div><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/yash-kumar-dubey-4b4926253">yash-kumar-dubey</a></div>
+        <div class="label">Languages</div><div>English, Hindi</div>
+        <div class="label">Interests</div><div>Tech Research, Automation, Problem Solving</div>
+      </div>
+    </section>
+    <section id="skills" class="section">
+      <div class="section-title">🛠️ Technical Skills</div>
+      <ul>
+        <li>AWS, Azure DevOps</li>
+        <li>Jenkins, Git, GitBucket, GitHub Actions</li>
+        <li>Docker, Kubernetes, ECS</li>
+        <li>Prometheus, Grafana, CloudWatch</li>
+        <li>Python, Bash, Rsync</li>
+        <li>PostgreSQL, MySQL</li>
+      </ul>
+    </section>
+    <section id="experience" class="section">
+      <div class="section-title">💼 Professional Experience</div>
+      <ul>
+        <li><strong>DevOps Engineer</strong> — Speed Sign Technologies Pvt. Ltd. (Feb 2025 – Present)</li>
+        <li><strong>Cloud & Linux Engineer</strong> — Remiges Technologies Pvt. Ltd. (May 2024 – Feb 2025)</li>
+        <li><strong>Linux System Administrator</strong> — Minitek Systems India Pvt. Ltd. (Oct 2023 – May 2024)</li>
+      </ul>
+    </section>
+    <section id="projects" class="section">
+      <div class="section-title">🚀 Key Projects</div>
+      <ul>
+        <li>Secure CI/CD Pipeline with Jenkins and GitBucket</li>
+        <li>PostgreSQL HA & AUA/KUA Setup</li>
+        <li>GitBucket On-Prem & SOP Documentation</li>
+        <li>Backup Automation & Monitoring</li>
+      </ul>
+    </section>
+    <section id="education" class="section">
+      <div class="section-title">🎓 Education</div>
+      <p><strong>Bachelor of Computer Applications (BCA)</strong><br/>Sanskriti University, Mathura • 2020 – 2023</p>
+    </section>
+    <section id="certs" class="section">
+      <div class="section-title">📜 Certifications</div>
+      <ul>
+        <li>AWS Certified Cloud Practitioner (Valid till Sept 2027)</li>
+        <li>Pursuing AWS Solutions Architect – Associate (Udemy)</li>
+        <li>Pursuing DevOps Certification (Physics Wallah)</li>
+      </ul>
+    </section>
+    <section id="testimonials" class="section">
+      <div class="section-title">🌟 Testimonials</div>
+      <p>"Yash's expertise in DevOps and cloud automation helped us achieve faster, more reliable deployments. Highly recommended!"</p>
+      <p>"He is proactive, detail-oriented, and always ready to solve complex problems. A valuable team member!"</p>
+    </section>
+    <section id="blog" class="section">
+      <div class="section-title">📝 Blog</div>
+      <ul>
+        <li><strong>How to Build a Secure CI/CD Pipeline with Jenkins & GitBucket</strong></li>
+        <li><strong>PostgreSQL High Availability on AWS: Best Practices</strong></li>
+      </ul>
+    </section>
+    <section id="contact" class="section">
+      <div class="section-title">📬 Contact</div>
+      <p>Email: <a href="mailto:ydubey020@gmail.com">ydubey020@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919935891845">+91 9935891845</a></p>
+      <p>LinkedIn: <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/yash-kumar-dubey-4b4926253">LinkedIn Profile</a></p>
+    </section>
+    <footer>
+      © <span id="year"></span> Yash Kumar Dubey • Built with HTML/CSS/JS
+    </footer>
+  </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
