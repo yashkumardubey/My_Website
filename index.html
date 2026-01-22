@@ -276,6 +276,14 @@ ul{margin:0;padding-left:18px}
   filter: drop-shadow(0 0 10px rgba(124,92,255,0.3));
 }
 
+.radial-progress svg text {
+  font-size: 48px;
+  text-anchor: middle;
+  dominant-baseline: central;
+  transform: rotate(90deg);
+  transform-origin: 60px 60px;
+}
+
 .radial-progress-text {
   text-align: center;
   margin-top: 12px;
@@ -888,6 +896,7 @@ details summary{cursor:pointer;font-weight:700}
         <svg viewBox="0 0 120 120">
           <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(124,92,255,0.2)" stroke-width="8"/>
           <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gradient1)" stroke-width="8" stroke-dasharray="264.3" stroke-dashoffset="39.6" stroke-linecap="round" style="animation: rotateCircle 2s ease-out forwards;"/>
+          <text x="60" y="60">☁️</text>
           <defs>
             <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" style="stop-color:var(--accent);stop-opacity:1" />
@@ -897,8 +906,8 @@ details summary{cursor:pointer;font-weight:700}
         </svg>
         <div class="radial-progress-text">
           <div class="radial-value">85%</div>
-          <div class="radial-label">Cloud</div>
-          <div class="radial-unit">AWS, Azure</div>
+          <div class="radial-label">☁️ Cloud</div>
+          <div class="radial-unit">🔶 AWS, 🟦 Azure</div>
         </div>
       </div>
       
@@ -906,6 +915,7 @@ details summary{cursor:pointer;font-weight:700}
         <svg viewBox="0 0 120 120">
           <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(124,92,255,0.2)" stroke-width="8"/>
           <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gradient2)" stroke-width="8" stroke-dasharray="300.3" stroke-dashoffset="0" stroke-linecap="round" style="animation: rotateCircle 2.2s ease-out forwards; animation-delay: 0.2s;"/>
+          <text x="60" y="60">🔄</text>
           <defs>
             <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" style="stop-color:var(--accent);stop-opacity:1" />
@@ -915,8 +925,8 @@ details summary{cursor:pointer;font-weight:700}
         </svg>
         <div class="radial-progress-text">
           <div class="radial-value">90%</div>
-          <div class="radial-label">CI/CD</div>
-          <div class="radial-unit">Jenkins, GitOps</div>
+          <div class="radial-label">🔄 CI/CD</div>
+          <div class="radial-unit">🐟 Jenkins, 🔀 GitOps</div>
         </div>
       </div>
       
@@ -924,6 +934,7 @@ details summary{cursor:pointer;font-weight:700}
         <svg viewBox="0 0 120 120">
           <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(124,92,255,0.2)" stroke-width="8"/>
           <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gradient3)" stroke-width="8" stroke-dasharray="266.4" stroke-dashoffset="66.6" stroke-linecap="round" style="animation: rotateCircle 2.4s ease-out forwards; animation-delay: 0.4s;"/>
+          <text x="60" y="60">📦</text>
           <defs>
             <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" style="stop-color:var(--accent);stop-opacity:1" />
@@ -933,8 +944,8 @@ details summary{cursor:pointer;font-weight:700}
         </svg>
         <div class="radial-progress-text">
           <div class="radial-value">80%</div>
-          <div class="radial-label">Containers</div>
-          <div class="radial-unit">Docker, K8s</div>
+          <div class="radial-label">📦 Containers</div>
+          <div class="radial-unit">🐋 Docker, ☸️ K8s</div>
         </div>
       </div>
       
@@ -942,6 +953,7 @@ details summary{cursor:pointer;font-weight:700}
         <svg viewBox="0 0 120 120">
           <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(124,92,255,0.2)" stroke-width="8"/>
           <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gradient4)" stroke-width="8" stroke-dasharray="273.6" stroke-dashoffset="54.6" stroke-linecap="round" style="animation: rotateCircle 2.6s ease-out forwards; animation-delay: 0.6s;"/>
+          <text x="60" y="60">📊</text>
           <defs>
             <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" style="stop-color:var(--accent);stop-opacity:1" />
@@ -951,8 +963,8 @@ details summary{cursor:pointer;font-weight:700}
         </svg>
         <div class="radial-progress-text">
           <div class="radial-value">82%</div>
-          <div class="radial-label">Monitoring</div>
-          <div class="radial-unit">Prometheus, Wazuh</div>
+          <div class="radial-label">📊 Monitoring</div>
+          <div class="radial-unit">⚡ Prometheus, 🛡️ Wazuh</div>
         </div>
       </div>
       
@@ -960,6 +972,7 @@ details summary{cursor:pointer;font-weight:700}
         <svg viewBox="0 0 120 120">
           <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(124,92,255,0.2)" stroke-width="8"/>
           <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gradient5)" stroke-width="8" stroke-dasharray="292.8" stroke-dashoffset="33.6" stroke-linecap="round" style="animation: rotateCircle 2.8s ease-out forwards; animation-delay: 0.8s;"/>
+          <text x="60" y="60">🐍</text>
           <defs>
             <linearGradient id="gradient5" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" style="stop-color:var(--accent);stop-opacity:1" />
@@ -969,8 +982,8 @@ details summary{cursor:pointer;font-weight:700}
         </svg>
         <div class="radial-progress-text">
           <div class="radial-value">88%</div>
-          <div class="radial-label">Scripting</div>
-          <div class="radial-unit">Python, Bash</div>
+          <div class="radial-label">🐍 Scripting</div>
+          <div class="radial-unit">🐍 Python, 💻 Bash</div>
         </div>
       </div>
       
@@ -978,6 +991,7 @@ details summary{cursor:pointer;font-weight:700}
         <svg viewBox="0 0 120 120">
           <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(124,92,255,0.2)" stroke-width="8"/>
           <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gradient6)" stroke-width="8" stroke-dasharray="259.2" stroke-dashoffset="73.8" stroke-linecap="round" style="animation: rotateCircle 3s ease-out forwards; animation-delay: 1s;"/>
+          <text x="60" y="60">🗄️</text>
           <defs>
             <linearGradient id="gradient6" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" style="stop-color:var(--accent);stop-opacity:1" />
@@ -987,8 +1001,8 @@ details summary{cursor:pointer;font-weight:700}
         </svg>
         <div class="radial-progress-text">
           <div class="radial-value">78%</div>
-          <div class="radial-label">Databases</div>
-          <div class="radial-unit">PostgreSQL HA/DR</div>
+          <div class="radial-label">🗄️ Databases</div>
+          <div class="radial-unit">🐘 PostgreSQL HA/DR</div>
         </div>
       </div>
     </div>
