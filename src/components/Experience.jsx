@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FiBriefcase, FiCheck } from 'react-icons/fi'
+import TechInfo from './TechInfo'
 import './Experience.css'
 
 export default function Experience() {
+  const [selectedTech, setSelectedTech] = useState(null)
+
   const experiences = [
     {
       title: 'DevOps Engineer',
@@ -69,9 +72,15 @@ export default function Experience() {
                 
                 <div className="job-highlights">
                   {exp.highlights.map((highlight, i) => (
-                    <span key={i} className="highlight-tag">
+                    <button
+                      key={i}
+                      className="highlight-tag"
+                      onClick={() => setSelectedTech(highlight)}
+                      title="Click to learn more"
+                      style={{ cursor: 'pointer' }}
+                    >
                       {highlight}
-                    </span>
+                    </button>
                   ))}
                 </div>
 
@@ -91,6 +100,8 @@ export default function Experience() {
           ))}
         </div>
       </div>
+
+      {selectedTech && <TechInfo tech={selectedTech} onClose={() => setSelectedTech(null)} />}
     </section>
   )
 }

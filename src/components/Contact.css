@@ -62,6 +62,12 @@
   gap: 20px;
 }
 
+.resume-section {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0, 113, 227, 0.2);
+}
+
 .contact-method {
   display: flex;
   align-items: center;
@@ -134,6 +140,28 @@
 }
 
 .contact-form .btn:hover {
+  box-shadow: 0 12px 30px rgba(0, 113, 227, 0.3);
+  transform: translateY(-3px);
+}
+
+.btn-resume {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.btn-resume:hover {
   box-shadow: 0 12px 30px rgba(0, 113, 227, 0.3);
   transform: translateY(-3px);
 }

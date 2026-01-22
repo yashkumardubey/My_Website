@@ -44,10 +44,10 @@ export default function Hero() {
             </div>
 
             <div className="hero-social">
-              <a href="https://github.com" aria-label="GitHub" className="social-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/yashkumardubey" aria-label="GitHub" className="social-link" target="_blank" rel="noopener noreferrer">
                 <FiGithub size={20} />
               </a>
-              <a href="https://linkedin.com" aria-label="LinkedIn" className="social-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/yash-kumar-dubey-4b4926253" aria-label="LinkedIn" className="social-link" target="_blank" rel="noopener noreferrer">
                 <FiLinkedin size={20} />
               </a>
               <a href="mailto:ydubey020@gmail.com" aria-label="Email" className="social-link">

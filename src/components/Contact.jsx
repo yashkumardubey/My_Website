@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi'
+import { FiMail, FiPhone, FiMapPin, FiDownload } from 'react-icons/fi'
 import './Contact.css'
 
 export default function Contact() {
@@ -83,6 +83,13 @@ export default function Contact() {
                 <FiMapPin size={20} />
                 <span>India</span>
               </div>
+            </div>
+            
+            <div className="resume-section">
+              <a href="/Yash_Kumar_Dubey_Resume.pdf" download className="btn btn-resume">
+                <FiDownload size={18} />
+                Download Resume
+              </a>
             </div>
           </div>
 

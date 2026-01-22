@@ -12,7 +12,7 @@ export default function Navigation({ isDark, setIsDark }) {
       <div className="nav-container">
         <div className="nav-brand">
           <a href="#" className="logo">
-            <span>YD</span>
+            <img src="/pic.jpeg" alt="YD" className="logo-image" />
           </a>
           <span className="brand-text">Yash Kumar Dubey</span>
         </div>

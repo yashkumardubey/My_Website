@@ -107,6 +107,86 @@ const techDetails = {
     description: 'Datadog is a SaaS-based monitoring and observability platform that provides real-time visibility into infrastructure and applications.',
     uses: ['Infrastructure monitoring', 'Application performance', 'Log analysis', 'Alert management'],
     keyFeatures: ['Real-time dashboards', 'Distributed tracing', 'Custom metrics', 'Integrations']
+  },
+  'Windows': {
+    description: 'Windows is a proprietary operating system developed by Microsoft, widely used in enterprise environments and personal computing.',
+    uses: ['Enterprise servers', 'Desktop computing', 'Active Directory management', 'System administration'],
+    keyFeatures: ['GUI interface', 'Enterprise support', 'Built-in security', 'Software compatibility']
+  },
+  'Rsync': {
+    description: 'Rsync is a fast, versatile file copying tool that can copy locally or to/from a remote host, commonly used for backups and synchronization.',
+    uses: ['File synchronization', 'Backup automation', 'Incremental backups', 'Mirror operations'],
+    keyFeatures: ['Delta transfer', 'Bandwidth efficient', 'Network transparent', 'Incremental copying']
+  },
+  'SCP': {
+    description: 'SCP (Secure Copy Protocol) is a means of securely transferring computer files between a local host and a remote host using SSH.',
+    uses: ['Secure file transfer', 'Remote backup', 'Cross-server file transfer', 'Data migration'],
+    keyFeatures: ['SSH encryption', 'Command-line usage', 'Batch transfers', 'Recursive copying']
+  },
+  'SSH': {
+    description: 'SSH (Secure Shell) is a cryptographic network protocol for operating network services securely over an unsecured network.',
+    uses: ['Remote server access', 'Secure communication', 'Key-based authentication', 'Tunneling'],
+    keyFeatures: ['End-to-end encryption', 'Key authentication', 'Port forwarding', 'Session management']
+  },
+  'cron': {
+    description: 'Cron is a time-based job scheduler in Unix-like operating systems that enables running scripts or commands at specific times.',
+    uses: ['Task scheduling', 'Automated backups', 'Log rotation', 'Periodic maintenance'],
+    keyFeatures: ['Flexible scheduling', 'Background execution', 'Log files', 'Email notifications']
+  },
+  'NAS': {
+    description: 'NAS (Network Attached Storage) is a dedicated file storage device that connects to a network and allows authorized computer users to access data.',
+    uses: ['Centralized storage', 'Data backup', 'File sharing', 'Disaster recovery'],
+    keyFeatures: ['Network connectivity', 'Multi-user access', 'RAID support', 'Scalability']
+  },
+  'NFS': {
+    description: 'NFS (Network File System) is a distributed file system protocol that allows users to access files over a network much like local storage.',
+    uses: ['Network file sharing', 'Centralized storage', 'Unix systems integration', 'Home directory mounting'],
+    keyFeatures: ['Transparent access', 'File locking', 'Performance optimization', 'Cross-platform support']
+  },
+  'EKS': {
+    description: 'Amazon EKS (Elastic Kubernetes Service) is a fully managed container orchestration service that makes it easy to run Kubernetes on AWS.',
+    uses: ['Managed Kubernetes', 'Container orchestration', 'Auto-scaling', 'HA deployments'],
+    keyFeatures: ['AWS integration', 'Automatic updates', 'High availability', 'Security features']
+  },
+  'PostgreSQL': {
+    description: 'PostgreSQL is a powerful, open-source relational database system known for reliability, data integrity, and feature richness.',
+    uses: ['Relational databases', 'ACID compliance', 'Complex queries', 'Enterprise applications'],
+    keyFeatures: ['Advanced features', 'JSON support', 'Full-text search', 'Replication support']
+  },
+  'Pgpool-II': {
+    description: 'Pgpool-II is a middleware for PostgreSQL that provides connection pooling, load balancing, and high availability features.',
+    uses: ['Connection pooling', 'Load balancing', 'Database failover', 'HA cluster management'],
+    keyFeatures: ['Automatic failover', 'Connection pooling', 'Query cache', 'Online recovery']
+  },
+  'DevSecOps': {
+    description: 'DevSecOps integrates security practices into the DevOps process, ensuring that security is embedded throughout the development lifecycle.',
+    uses: ['Security automation', 'Vulnerability scanning', 'Compliance management', 'Secure deployment'],
+    keyFeatures: ['Shift-left security', 'Automated scanning', 'Compliance frameworks', 'Risk management']
+  },
+  'Mend': {
+    description: 'Mend (formerly WhiteSource) is a software composition analysis platform that identifies and remediates open-source vulnerabilities.',
+    uses: ['Vulnerability detection', 'License compliance', 'Dependency tracking', 'Security reporting'],
+    keyFeatures: ['Real-time scanning', 'Automated remediation', 'Compliance tracking', 'API integration']
+  },
+  'Vault': {
+    description: 'HashiCorp Vault is a secrets management tool that provides secure storage and access control for sensitive data like API keys and credentials.',
+    uses: ['Secrets management', 'Credential storage', 'Encryption', 'Access control'],
+    keyFeatures: ['Dynamic secrets', 'Encryption as a service', 'Audit logging', 'Multi-auth methods']
+  },
+  'Monitoring': {
+    description: 'Monitoring encompasses tools and practices for tracking system performance, health, and availability to ensure optimal operations.',
+    uses: ['Performance tracking', 'Alert management', 'Uptime tracking', 'Incident response'],
+    keyFeatures: ['Real-time metrics', 'Dashboard visualization', 'Alert mechanisms', 'Historical data']
+  },
+  'System Admin': {
+    description: 'System Administration involves managing and maintaining IT infrastructure, servers, networks, and user accounts in an organization.',
+    uses: ['Server management', 'User management', 'Network administration', 'System updates'],
+    keyFeatures: ['User provisioning', 'Access control', 'Performance tuning', 'Disaster recovery']
+  },
+  'Backup': {
+    description: 'Backup refers to the process of creating copies of data to recover it in case of data loss, corruption, or system failures.',
+    uses: ['Data protection', 'Disaster recovery', 'Compliance', 'Business continuity'],
+    keyFeatures: ['Incremental backups', 'Encryption', 'Retention policies', 'Recovery testing']
   }
 }
 
