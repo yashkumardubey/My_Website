@@ -1,0 +1,189 @@
+.skills {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 50%, var(--bg-secondary) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.skills::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 0, 110, 0.1), transparent);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.skills::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.1), transparent);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-category {
+  padding: 28px;
+  background: linear-gradient(135deg, rgba(0, 113, 227, 0.05), rgba(0, 212, 255, 0.02));
+  border: 1px solid rgba(0, 113, 227, 0.2);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.skill-category::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.05));
+  pointer-events: none;
+}
+
+.skill-category:hover {
+  background: linear-gradient(135deg, rgba(0, 113, 227, 0.15), rgba(0, 212, 255, 0.1));
+  border-color: var(--accent);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.skill-category h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 16px 0;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, rgba(0, 113, 227, 0.2), rgba(0, 212, 255, 0.1));
+  color: var(--text-secondary);
+  border: 1px solid rgba(0, 113, 227, 0.3);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.skill-tag:hover {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: white;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 113, 227, 0.3);
+}
+
+/* Professional Summary Section */
+.expertise-summary {
+  margin-top: 60px;
+  padding: 40px;
+  background: linear-gradient(135deg, rgba(0, 113, 227, 0.1), rgba(0, 212, 255, 0.05));
+  border: 1px solid rgba(0, 113, 227, 0.2);
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.expertise-summary h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 30px 0;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.summary-card {
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(0, 113, 227, 0.12), rgba(0, 212, 255, 0.08));
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.summary-card:hover {
+  background: linear-gradient(135deg, rgba(0, 113, 227, 0.2), rgba(0, 212, 255, 0.12));
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 113, 227, 0.15);
+}
+
+.summary-number {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+}
+
+.summary-card p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 60px 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expertise-summary {
+    padding: 24px;
+    margin-top: 40px;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .summary-number {
+    font-size: 24px;
+  }
+}
