@@ -24,7 +24,7 @@ export default function Contact() {
     setLoading(true)
 
     try {
-      const response = await fetch('http://localhost:3001/api/send-email', {
+      const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ export default function Contact() {
       }
     } catch (error) {
       console.error('Error sending email:', error)
-      alert('Error sending message. Make sure backend server is running.')
+      alert('Error sending message. Please try again.')
     } finally {
       setLoading(false)
     }
