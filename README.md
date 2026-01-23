@@ -126,7 +126,9 @@ vercel
 
 ## License
 
-This project is open source and available under the MIT License.
+© 2026 Yash Kumar Dubey. All Rights Reserved.
+
+This project is proprietary and confidential. Unauthorized copying, modification, or distribution is strictly prohibited.
 
 ## Contact
 
