@@ -24,8 +24,7 @@ export default function Contact() {
     setLoading(true)
 
     try {
-      // Send using FormSubmit (no backend needed)
-      const response = await fetch('https://formspree.io/f/xyzqwert', {
+      const response = await fetch('http://localhost:3001/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -33,28 +32,20 @@ export default function Contact() {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          message: formData.message,
-          _subject: `New message from ${formData.name}`
+          message: formData.message
         })
       })
 
       if (response.ok) {
-        // Show success message
         setSubmitted(true)
         setFormData({ name: '', email: '', message: '' })
-
-        // Reset message after 3 seconds
         setTimeout(() => setSubmitted(false), 3000)
       } else {
         throw new Error('Failed to send')
       }
     } catch (error) {
       console.error('Error sending email:', error)
-      // Fallback: Copy to clipboard and show instruction
-      const emailText = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-      navigator.clipboard.writeText(emailText)
-      alert('Message copied! Please email it to ydubey020@gmail.com')
-      setFormData({ name: '', email: '', message: '' })
+      alert('Error sending message. Make sure backend server is running.')
     } finally {
       setLoading(false)
     }
