@@ -8,6 +8,13 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { SpeedInsights } from "@vercel/speed-insights/react"
+function injectSpeedInsights() {
+  return (
+    <SpeedInsights
+      url="https://my-website-one-zeta-56.vercel.app/"
+    />
+  )
+}
 
 export default function App() {
   const [isDark, setIsDark] = useState(true)
@@ -36,5 +43,6 @@ export default function App() {
       </main>
       <Footer />
     </div>
+
   )
 }
